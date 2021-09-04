@@ -11,7 +11,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "https://localhost:44336/temperature",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"temperature"
+					]
 				}
 			},
 			"response": []
@@ -19,10 +27,28 @@
 		{
 			"name": "POST",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "https://localhost:44336/temperature?Date=2020-01-03 12:25:48&Temperature=11.3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"temperature"
+					],
+					"query": [
+						{
+							"key": "Date",
+							"value": "2020-01-03 12:25:48"
+						},
+						{
+							"key": "Temperature",
+							"value": "11.3"
+						}
+					]
 				}
 			},
 			"response": []
@@ -30,10 +56,28 @@
 		{
 			"name": "PUT",
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "https://localhost:44336/temperature?DateForChange=2020-01-03T12:25:48&NewTemperature=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"temperature"
+					],
+					"query": [
+						{
+							"key": "DateForChange",
+							"value": "2020-01-03T12:25:48"
+						},
+						{
+							"key": "NewTemperature",
+							"value": "2"
+						}
+					]
 				}
 			},
 			"response": []
@@ -41,10 +85,24 @@
 		{
 			"name": "DELETE",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "https://localhost:44336/temperature?DateForDelete=2020-01-03T12:25:47",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"temperature"
+					],
+					"query": [
+						{
+							"key": "DateForDelete",
+							"value": "2020-01-03T12:25:47"
+						}
+					]
 				}
 			},
 			"response": []
