@@ -23,10 +23,10 @@ namespace MetricAgent.DB
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(TEntity entity)
+        public void Delete(TEntity entity)
         {
-            await Task.Run(() => _context.Set<TEntity>().FirstOrDefault().Remove(entity));
-            await _context.SaveChangesAsync();
+            _context.Set<TEntity>().Remove(entity);
+            _context.SaveChanges();
         }
 
         public IQueryable<TEntity> GetAll()

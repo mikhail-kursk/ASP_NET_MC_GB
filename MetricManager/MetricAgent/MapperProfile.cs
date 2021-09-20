@@ -16,27 +16,27 @@ namespace MetricAgent
             CreateMap<CpuEntity, SelectDto>();
             CreateMap<CreateDto, CpuEntity>();
             CreateMap<UpdateDto, CpuEntity>();
-            CreateMap<long, CpuEntity>();
+            CreateMap<DeleteDto, CpuEntity>();
 
             CreateMap<DotnetEntity, SelectDto>();
             CreateMap<CreateDto, DotnetEntity>();
             CreateMap<UpdateDto, DotnetEntity>();
-            CreateMap<long, DotnetEntity>();
+            CreateMap<DeleteDto, DotnetEntity>();
 
             CreateMap<HddEntity, SelectDto>();
             CreateMap<CreateDto, HddEntity>();
             CreateMap<UpdateDto, HddEntity>();
-            CreateMap<long, HddEntity>();
+            CreateMap<DeleteDto, HddEntity>();
 
             CreateMap<NetworkEntity, SelectDto>();
             CreateMap<CreateDto, NetworkEntity>();
             CreateMap<UpdateDto, NetworkEntity>();
-            CreateMap<long, NetworkEntity>();
+            CreateMap<DeleteDto, NetworkEntity>();
 
             CreateMap<RamEntity, SelectDto>();
             CreateMap<CreateDto, RamEntity>();
-            CreateMap<UpdateDto, RamEntity>();
-            CreateMap<long, RamEntity>();
+            CreateMap<UpdateDto, RamEntity>();;
+            CreateMap<DeleteDto, RamEntity>();;
         }
     }
 }

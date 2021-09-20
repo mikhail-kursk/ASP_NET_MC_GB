@@ -50,11 +50,10 @@ namespace MetricAgent.Controllers
         }
 
         [HttpDelete()]
-        public async Task<IActionResult> DeleteAsync([FromQuery] long id)
+        public void Delete([FromBody] DeleteDto dto)
         {
-            _logger.LogInformation($"id = {id}");
-            await _repository.DeleteAsync(_mapper.Map<TEntity>(id));
-            return Ok();
+            _logger.LogInformation($"dto = {dto}");
+            _repository.Delete(_mapper.Map<TEntity>(dto));
         }
     }
 }

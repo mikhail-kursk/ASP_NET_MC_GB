@@ -9,6 +9,6 @@ namespace MetricAgent.DB
         IQueryable<TEntity> GetAll();
         Task AddAsync(TEntity entity);
         Task UpdateAsync(TEntity entity);
-        Task DeleteAsync(TEntity entity);
+        void Delete(TEntity entity);
     }
 }
